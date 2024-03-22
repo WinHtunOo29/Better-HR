@@ -1,0 +1,6 @@
+framework module Pods_Better_HR_Better_HRUITests {
+  umbrella header "Pods-Better HR-Better HRUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

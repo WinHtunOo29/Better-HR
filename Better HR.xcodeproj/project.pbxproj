@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840DC7442BA987B9008938DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DC7432BA987B9008938DF /* AppDelegate.swift */; };
+		840DC7482BA987B9008938DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DC7472BA987B9008938DF /* ViewController.swift */; };
+		840DC7502BA987BA008938DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840DC74F2BA987BA008938DF /* Assets.xcassets */; };
+		840DC7532BA987BA008938DF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 840DC7522BA987BA008938DF /* Base */; };
+		840DC7792BA98A97008938DF /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DC7782BA98A97008938DF /* LaunchViewController.swift */; };
+		840DC77B2BA98AAD008938DF /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840DC77A2BA98AAD008938DF /* LaunchViewController.xib */; };
+		840DC77E2BA993BF008938DF /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DC77D2BA993BF008938DF /* ListingViewController.swift */; };
+		840DC7802BA993CC008938DF /* ListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840DC77F2BA993CC008938DF /* ListingViewController.xib */; };
+		840DC7832BA996F4008938DF /* ListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DC7822BA996F4008938DF /* ListingRouter.swift */; };
+		84C5AE032BAABFD30058098A /* ListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE022BAABFD30058098A /* ListingPresenter.swift */; };
+		84C5AE052BAABFE00058098A /* ListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE042BAABFE00058098A /* ListingInteractor.swift */; };
+		84C5AE0F2BAAC5060058098A /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE0D2BAAC5060058098A /* ListingTableViewCell.swift */; };
+		84C5AE102BAAC5060058098A /* ListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5AE0E2BAAC5060058098A /* ListingTableViewCell.xib */; };
+		84C5AE142BAACEE00058098A /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE132BAACEE00058098A /* DetailRouter.swift */; };
+		84C5AE162BAACEED0058098A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE152BAACEED0058098A /* DetailPresenter.swift */; };
+		84C5AE182BAACEF70058098A /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE172BAACEF70058098A /* DetailInteractor.swift */; };
+		84C5AE1A2BAACF0D0058098A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE192BAACF0D0058098A /* DetailViewController.swift */; };
+		84C5AE1C2BAACF170058098A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5AE1B2BAACF170058098A /* DetailViewController.xib */; };
+		84C5AE332BAC35FA0058098A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE322BAC35FA0058098A /* NetworkManager.swift */; };
+		84C5AE362BAC5FFC0058098A /* TVListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE352BAC5FFC0058098A /* TVListModel.swift */; };
+		84C5AE3A2BAC8DFE0058098A /* TVDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE392BAC8DFE0058098A /* TVDetailsModel.swift */; };
+		84C5AE3E2BAC91CD0058098A /* SeasonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C5AE3D2BAC91CD0058098A /* SeasonsTableViewCell.xib */; };
+		84C5AE3F2BAC91CD0058098A /* SeasonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C5AE3C2BAC91CD0058098A /* SeasonsTableViewCell.swift */; };
+		84D6DEE82BAD3F3D00859CAC /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DEE72BAD3F3D00859CAC /* SQLiteManager.swift */; };
+		B9284FCD1F48CFFDCA77ADC2 /* Pods_Better_HR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013CA8A1E89161BB8C749F9A /* Pods_Better_HR.framework */; };
+		DEC9C5DE26C2AF2F460DBFA3 /* Pods_Better_HR_Better_HRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E3210CEEDA8F45ADFA3A51 /* Pods_Better_HR_Better_HRUITests.framework */; };
+		E8B4AF58D7DE7E2BD5E0B42F /* Pods_Better_HRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AC8676BC6289CF1261F531 /* Pods_Better_HRTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840DC75A2BA987BA008938DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840DC7382BA987B9008938DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840DC73F2BA987B9008938DF;
+			remoteInfo = "Better HR";
+		};
+		840DC7642BA987BA008938DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840DC7382BA987B9008938DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840DC73F2BA987B9008938DF;
+			remoteInfo = "Better HR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013CA8A1E89161BB8C749F9A /* Pods_Better_HR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Better_HR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEBCFD3EB13794CB818B088 /* Pods-Better HR-Better HRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better HR-Better HRUITests.release.xcconfig"; path = "Target Support Files/Pods-Better HR-Better HRUITests/Pods-Better HR-Better HRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63D9CE273AFCAA535F043895 /* Pods-Better HRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better HRTests.release.xcconfig"; path = "Target Support Files/Pods-Better HRTests/Pods-Better HRTests.release.xcconfig"; sourceTree = "<group>"; };
+		6549CE71BB1C0E627224C68F /* Pods-Better HR-Better HRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better HR-Better HRUITests.debug.xcconfig"; path = "Target Support Files/Pods-Better HR-Better HRUITests/Pods-Better HR-Better HRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		780A28CFC1C9F917CD4AF37C /* Pods-Better HR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better HR.debug.xcconfig"; path = "Target Support Files/Pods-Better HR/Pods-Better HR.debug.xcconfig"; sourceTree = "<group>"; };
+		840DC7402BA987B9008938DF /* Better HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better HR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840DC7432BA987B9008938DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840DC7472BA987B9008938DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840DC74F2BA987BA008938DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840DC7522BA987BA008938DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840DC7542BA987BA008938DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840DC7592BA987BA008938DF /* Better HRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Better HRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840DC7632BA987BA008938DF /* Better HRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Better HRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840DC7782BA98A97008938DF /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		840DC77A2BA98AAD008938DF /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
+		840DC77D2BA993BF008938DF /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
+		840DC77F2BA993CC008938DF /* ListingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingViewController.xib; sourceTree = "<group>"; };
+		840DC7822BA996F4008938DF /* ListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingRouter.swift; sourceTree = "<group>"; };
+		84C5AE022BAABFD30058098A /* ListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresenter.swift; sourceTree = "<group>"; };
+		84C5AE042BAABFE00058098A /* ListingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInteractor.swift; sourceTree = "<group>"; };
+		84C5AE0D2BAAC5060058098A /* ListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
+		84C5AE0E2BAAC5060058098A /* ListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingTableViewCell.xib; sourceTree = "<group>"; };
+		84C5AE132BAACEE00058098A /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		84C5AE152BAACEED0058098A /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		84C5AE172BAACEF70058098A /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		84C5AE192BAACF0D0058098A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		84C5AE1B2BAACF170058098A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		84C5AE322BAC35FA0058098A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		84C5AE352BAC5FFC0058098A /* TVListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListModel.swift; sourceTree = "<group>"; };
+		84C5AE392BAC8DFE0058098A /* TVDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailsModel.swift; sourceTree = "<group>"; };
+		84C5AE3C2BAC91CD0058098A /* SeasonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewCell.swift; sourceTree = "<group>"; };
+		84C5AE3D2BAC91CD0058098A /* SeasonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonsTableViewCell.xib; sourceTree = "<group>"; };
+		84D6DEE72BAD3F3D00859CAC /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		A4AC8676BC6289CF1261F531 /* Pods_Better_HRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Better_HRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B240A4354FF7B84E94A5944F /* Pods-Better HRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better HRTests.debug.xcconfig"; path = "Target Support Files/Pods-Better HRTests/Pods-Better HRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9E3210CEEDA8F45ADFA3A51 /* Pods_Better_HR_Better_HRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Better_HR_Better_HRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DEBE1129FD382CC8B90E82 /* Pods-Better HR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Better HR.release.xcconfig"; path = "Target Support Files/Pods-Better HR/Pods-Better HR.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840DC73D2BA987B9008938DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9284FCD1F48CFFDCA77ADC2 /* Pods_Better_HR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840DC7562BA987BA008938DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B4AF58D7DE7E2BD5E0B42F /* Pods_Better_HRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840DC7602BA987BA008938DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC9C5DE26C2AF2F460DBFA3 /* Pods_Better_HR_Better_HRUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FB9466D9086E545D372A1C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				780A28CFC1C9F917CD4AF37C /* Pods-Better HR.debug.xcconfig */,
+				F8DEBE1129FD382CC8B90E82 /* Pods-Better HR.release.xcconfig */,
+				6549CE71BB1C0E627224C68F /* Pods-Better HR-Better HRUITests.debug.xcconfig */,
+				2CEBCFD3EB13794CB818B088 /* Pods-Better HR-Better HRUITests.release.xcconfig */,
+				B240A4354FF7B84E94A5944F /* Pods-Better HRTests.debug.xcconfig */,
+				63D9CE273AFCAA535F043895 /* Pods-Better HRTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		54E0E13C2881B6F4A58E46AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				013CA8A1E89161BB8C749F9A /* Pods_Better_HR.framework */,
+				B9E3210CEEDA8F45ADFA3A51 /* Pods_Better_HR_Better_HRUITests.framework */,
+				A4AC8676BC6289CF1261F531 /* Pods_Better_HRTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840DC7372BA987B9008938DF = {
+			isa = PBXGroup;
+			children = (
+				840DC7422BA987B9008938DF /* Better HR */,
+				840DC7412BA987B9008938DF /* Products */,
+				3FB9466D9086E545D372A1C2 /* Pods */,
+				54E0E13C2881B6F4A58E46AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		840DC7412BA987B9008938DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840DC7402BA987B9008938DF /* Better HR.app */,
+				840DC7592BA987BA008938DF /* Better HRTests.xctest */,
+				840DC7632BA987BA008938DF /* Better HRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840DC7422BA987B9008938DF /* Better HR */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE342BAC5FEF0058098A /* Model */,
+				84C5AE2F2BAC34FC0058098A /* Networking */,
+				84C5AE092BAAC4C00058098A /* TableViewCells */,
+				840DC7762BA98A75008938DF /* Modules */,
+				840DC7432BA987B9008938DF /* AppDelegate.swift */,
+				840DC7472BA987B9008938DF /* ViewController.swift */,
+				840DC74F2BA987BA008938DF /* Assets.xcassets */,
+				840DC7512BA987BA008938DF /* LaunchScreen.storyboard */,
+				840DC7542BA987BA008938DF /* Info.plist */,
+				84D6DEE72BAD3F3D00859CAC /* SQLiteManager.swift */,
+			);
+			path = "Better HR";
+			sourceTree = "<group>";
+		};
+		840DC7762BA98A75008938DF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE112BAACEC20058098A /* DetailView */,
+				840DC77C2BA993B4008938DF /* ListingView */,
+				840DC7772BA98A88008938DF /* Launch */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		840DC7772BA98A88008938DF /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				840DC7782BA98A97008938DF /* LaunchViewController.swift */,
+				840DC77A2BA98AAD008938DF /* LaunchViewController.xib */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		840DC77C2BA993B4008938DF /* ListingView */ = {
+			isa = PBXGroup;
+			children = (
+				840DC7812BA996CB008938DF /* ListingViewController */,
+				840DC7822BA996F4008938DF /* ListingRouter.swift */,
+				84C5AE022BAABFD30058098A /* ListingPresenter.swift */,
+				84C5AE042BAABFE00058098A /* ListingInteractor.swift */,
+			);
+			path = ListingView;
+			sourceTree = "<group>";
+		};
+		840DC7812BA996CB008938DF /* ListingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840DC77D2BA993BF008938DF /* ListingViewController.swift */,
+				840DC77F2BA993CC008938DF /* ListingViewController.xib */,
+			);
+			path = ListingViewController;
+			sourceTree = "<group>";
+		};
+		84C5AE092BAAC4C00058098A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE3B2BAC91B80058098A /* SeasonsTableViewCell */,
+				84C5AE0C2BAAC4ED0058098A /* ListingTableVIewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		84C5AE0C2BAAC4ED0058098A /* ListingTableVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE0D2BAAC5060058098A /* ListingTableViewCell.swift */,
+				84C5AE0E2BAAC5060058098A /* ListingTableViewCell.xib */,
+			);
+			path = ListingTableVIewCell;
+			sourceTree = "<group>";
+		};
+		84C5AE112BAACEC20058098A /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE122BAACECB0058098A /* DetailViewController */,
+				84C5AE132BAACEE00058098A /* DetailRouter.swift */,
+				84C5AE152BAACEED0058098A /* DetailPresenter.swift */,
+				84C5AE172BAACEF70058098A /* DetailInteractor.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		84C5AE122BAACECB0058098A /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE192BAACF0D0058098A /* DetailViewController.swift */,
+				84C5AE1B2BAACF170058098A /* DetailViewController.xib */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		84C5AE2F2BAC34FC0058098A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE322BAC35FA0058098A /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84C5AE342BAC5FEF0058098A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE352BAC5FFC0058098A /* TVListModel.swift */,
+				84C5AE392BAC8DFE0058098A /* TVDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84C5AE3B2BAC91B80058098A /* SeasonsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84C5AE3C2BAC91CD0058098A /* SeasonsTableViewCell.swift */,
+				84C5AE3D2BAC91CD0058098A /* SeasonsTableViewCell.xib */,
+			);
+			path = SeasonsTableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840DC73F2BA987B9008938DF /* Better HR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840DC76D2BA987BA008938DF /* Build configuration list for PBXNativeTarget "Better HR" */;
+			buildPhases = (
+				00761B9B32D24074A637C05D /* [CP] Check Pods Manifest.lock */,
+				840DC73C2BA987B9008938DF /* Sources */,
+				840DC73D2BA987B9008938DF /* Frameworks */,
+				840DC73E2BA987B9008938DF /* Resources */,
+				00D2ED7F7896B31386E7661A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Better HR";
+			productName = "Better HR";
+			productReference = 840DC7402BA987B9008938DF /* Better HR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840DC7582BA987BA008938DF /* Better HRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840DC7702BA987BA008938DF /* Build configuration list for PBXNativeTarget "Better HRTests" */;
+			buildPhases = (
+				9A43F23368B472076AD4E2C9 /* [CP] Check Pods Manifest.lock */,
+				840DC7552BA987BA008938DF /* Sources */,
+				840DC7562BA987BA008938DF /* Frameworks */,
+				840DC7572BA987BA008938DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840DC75B2BA987BA008938DF /* PBXTargetDependency */,
+			);
+			name = "Better HRTests";
+			productName = "Better HRTests";
+			productReference = 840DC7592BA987BA008938DF /* Better HRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		840DC7622BA987BA008938DF /* Better HRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840DC7732BA987BA008938DF /* Build configuration list for PBXNativeTarget "Better HRUITests" */;
+			buildPhases = (
+				FBC1F777078E0AC5F348F62A /* [CP] Check Pods Manifest.lock */,
+				840DC75F2BA987BA008938DF /* Sources */,
+				840DC7602BA987BA008938DF /* Frameworks */,
+				840DC7612BA987BA008938DF /* Resources */,
+				223C6CBCA7FE66461A7E1455 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840DC7652BA987BA008938DF /* PBXTargetDependency */,
+			);
+			name = "Better HRUITests";
+			productName = "Better HRUITests";
+			productReference = 840DC7632BA987BA008938DF /* Better HRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840DC7382BA987B9008938DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					840DC73F2BA987B9008938DF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					840DC7582BA987BA008938DF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 840DC73F2BA987B9008938DF;
+					};
+					840DC7622BA987BA008938DF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 840DC73F2BA987B9008938DF;
+					};
+				};
+			};
+			buildConfigurationList = 840DC73B2BA987B9008938DF /* Build configuration list for PBXProject "Better HR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840DC7372BA987B9008938DF;
+			productRefGroup = 840DC7412BA987B9008938DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840DC73F2BA987B9008938DF /* Better HR */,
+				840DC7582BA987BA008938DF /* Better HRTests */,
+				840DC7622BA987BA008938DF /* Better HRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840DC73E2BA987B9008938DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840DC77B2BA98AAD008938DF /* LaunchViewController.xib in Resources */,
+				84C5AE1C2BAACF170058098A /* DetailViewController.xib in Resources */,
+				840DC7502BA987BA008938DF /* Assets.xcassets in Resources */,
+				840DC7532BA987BA008938DF /* Base in Resources */,
+				840DC7802BA993CC008938DF /* ListingViewController.xib in Resources */,
+				84C5AE3E2BAC91CD0058098A /* SeasonsTableViewCell.xib in Resources */,
+				84C5AE102BAAC5060058098A /* ListingTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840DC7572BA987BA008938DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840DC7612BA987BA008938DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00761B9B32D24074A637C05D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Better HR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		00D2ED7F7896B31386E7661A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Better HR/Pods-Better HR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Better HR/Pods-Better HR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Better HR/Pods-Better HR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		223C6CBCA7FE66461A7E1455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Better HR-Better HRUITests/Pods-Better HR-Better HRUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Better HR-Better HRUITests/Pods-Better HR-Better HRUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Better HR-Better HRUITests/Pods-Better HR-Better HRUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A43F23368B472076AD4E2C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Better HRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC1F777078E0AC5F348F62A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Better HR-Better HRUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840DC73C2BA987B9008938DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C5AE3A2BAC8DFE0058098A /* TVDetailsModel.swift in Sources */,
+				84C5AE1A2BAACF0D0058098A /* DetailViewController.swift in Sources */,
+				84C5AE0F2BAAC5060058098A /* ListingTableViewCell.swift in Sources */,
+				84C5AE032BAABFD30058098A /* ListingPresenter.swift in Sources */,
+				840DC77E2BA993BF008938DF /* ListingViewController.swift in Sources */,
+				84C5AE182BAACEF70058098A /* DetailInteractor.swift in Sources */,
+				84D6DEE82BAD3F3D00859CAC /* SQLiteManager.swift in Sources */,
+				840DC7832BA996F4008938DF /* ListingRouter.swift in Sources */,
+				84C5AE362BAC5FFC0058098A /* TVListModel.swift in Sources */,
+				84C5AE162BAACEED0058098A /* DetailPresenter.swift in Sources */,
+				840DC7482BA987B9008938DF /* ViewController.swift in Sources */,
+				84C5AE142BAACEE00058098A /* DetailRouter.swift in Sources */,
+				840DC7792BA98A97008938DF /* LaunchViewController.swift in Sources */,
+				84C5AE332BAC35FA0058098A /* NetworkManager.swift in Sources */,
+				840DC7442BA987B9008938DF /* AppDelegate.swift in Sources */,
+				84C5AE052BAABFE00058098A /* ListingInteractor.swift in Sources */,
+				84C5AE3F2BAC91CD0058098A /* SeasonsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840DC7552BA987BA008938DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840DC75F2BA987BA008938DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840DC75B2BA987BA008938DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840DC73F2BA987B9008938DF /* Better HR */;
+			targetProxy = 840DC75A2BA987BA008938DF /* PBXContainerItemProxy */;
+		};
+		840DC7652BA987BA008938DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840DC73F2BA987B9008938DF /* Better HR */;
+			targetProxy = 840DC7642BA987BA008938DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840DC7512BA987BA008938DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840DC7522BA987BA008938DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840DC76B2BA987BA008938DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		840DC76C2BA987BA008938DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840DC76E2BA987BA008938DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780A28CFC1C9F917CD4AF37C /* Pods-Better HR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YC5ZU5S8GW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Better HR/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WinHtunOo.Better-HR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840DC76F2BA987BA008938DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8DEBE1129FD382CC8B90E82 /* Pods-Better HR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YC5ZU5S8GW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Better HR/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WinHtunOo.Better-HR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		840DC7712BA987BA008938DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B240A4354FF7B84E94A5944F /* Pods-Better HRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YC5ZU5S8GW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WinHtunOo.Better-HRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Better HR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Better HR";
+			};
+			name = Debug;
+		};
+		840DC7722BA987BA008938DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D9CE273AFCAA535F043895 /* Pods-Better HRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YC5ZU5S8GW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WinHtunOo.Better-HRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Better HR.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Better HR";
+			};
+			name = Release;
+		};
+		840DC7742BA987BA008938DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6549CE71BB1C0E627224C68F /* Pods-Better HR-Better HRUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YC5ZU5S8GW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WinHtunOo.Better-HRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Better HR";
+			};
+			name = Debug;
+		};
+		840DC7752BA987BA008938DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEBCFD3EB13794CB818B088 /* Pods-Better HR-Better HRUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YC5ZU5S8GW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WinHtunOo.Better-HRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Better HR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840DC73B2BA987B9008938DF /* Build configuration list for PBXProject "Better HR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840DC76B2BA987BA008938DF /* Debug */,
+				840DC76C2BA987BA008938DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840DC76D2BA987BA008938DF /* Build configuration list for PBXNativeTarget "Better HR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840DC76E2BA987BA008938DF /* Debug */,
+				840DC76F2BA987BA008938DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840DC7702BA987BA008938DF /* Build configuration list for PBXNativeTarget "Better HRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840DC7712BA987BA008938DF /* Debug */,
+				840DC7722BA987BA008938DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840DC7732BA987BA008938DF /* Build configuration list for PBXNativeTarget "Better HRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840DC7742BA987BA008938DF /* Debug */,
+				840DC7752BA987BA008938DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840DC7382BA987B9008938DF /* Project object */;
+}
